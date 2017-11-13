@@ -18,8 +18,7 @@ class Artist
 
   def self.find_or_create_by_name(name)
     artist = @@all.select {|o| o.name == name}
-    puts artist
-    if(!artist.nil?)
+    if(artist.is_a? Artist)
       return artist
     end
     return Artist.new(name)

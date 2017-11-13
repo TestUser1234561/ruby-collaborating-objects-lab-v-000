@@ -20,4 +20,8 @@ class Artist
     Artist.new(name)
   end
 
+  def print_songs
+    puts @songs
+  end
+
 end

@@ -19,7 +19,6 @@ class Artist
   def self.find_or_create_by_name(name)
     artist = @@all.detect {|o| o.name == name}
     if(artist.is_a? Artist)
-      puts "owdk"
       return artist
     end
     return Artist.new(name)

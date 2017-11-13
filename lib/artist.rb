@@ -21,7 +21,9 @@ class Artist
     if(artist.is_a? Artist)
       return artist
     end
-    return Artist.new(name)
+    art = Artist.new(name)
+    art.save
+    return art
   end
 
   def add_song(song)

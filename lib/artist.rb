@@ -12,6 +12,10 @@ class Artist
     @@all << self
   end
 
+  def self.all
+    @@all
+  end
+
   def self.find_or_create_by_name(name)
     artist = @@all.select {|o| o.name == name}
     if(!artist.nil?)

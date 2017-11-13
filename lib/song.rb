@@ -7,7 +7,7 @@ class Song
   end
 
   def self.new_by_filename(name)
-    title = name.chomp(".mp3").split(" - ").second
+    title = name.chomp(".mp3").split(" - ").index("Black or White")
     Song.new(title)
   end
 end

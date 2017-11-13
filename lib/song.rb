@@ -11,5 +11,6 @@ class Song
     song = Song.new(title[1])
     song.artist = Artist.find_or_create_by_name(title[0])
     song
+    puts song
   end
 end

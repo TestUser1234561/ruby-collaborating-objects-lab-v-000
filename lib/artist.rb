@@ -19,7 +19,7 @@ class Artist
   def self.find_or_create_by_name(name)
     artist = @@all.select {|o| o.name == name}
     if(!artist.nil?)
-      return artist.first
+      return artist
     end
     return Artist.new(name)
   end

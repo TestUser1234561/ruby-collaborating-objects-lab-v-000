@@ -17,7 +17,7 @@ class Artist
     if(!artist.nil?)
       return artist
     end
-    Artist.new(name)
+    return Artist.new(name)
   end
 
   def print_songs

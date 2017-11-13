@@ -7,6 +7,7 @@ class MP3Importer
   end
 
   def files
+    puts @path
     puts Dir[@path+'/*.mp3']
   end
 

@@ -26,6 +26,10 @@ class Artist
     return Artist.new(name)
   end
 
+  def add_song(song)
+    @songs << Song.new_by_filename(song)
+  end
+
   def print_songs
     puts @songs
   end

@@ -1,6 +1,6 @@
 class MP3Importer
 
-  attr_accessor :names
+  attr_accessor :path
 
   def initialize(names)
     @names = names

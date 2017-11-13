@@ -11,6 +11,6 @@ class MP3Importer
   end
 
   def import(file)
-    puts file=
+    puts file
   end
 end

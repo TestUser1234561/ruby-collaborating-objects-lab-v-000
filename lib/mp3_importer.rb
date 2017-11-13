@@ -10,7 +10,7 @@ class MP3Importer
     @files = Dir[@path+'/*.mp3'].map { |f| f.split("/").last }
   end
 
-  def import(file)
-    puts file
+  def import
+    
   end
 end

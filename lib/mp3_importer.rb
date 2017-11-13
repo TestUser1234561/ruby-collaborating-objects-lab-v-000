@@ -8,6 +8,7 @@ class MP3Importer
 
   def files
     @files = Dir.entries(@path).select {|f| File.extname(f) == ".mp3"}
+    puts files
   end
 
   def import

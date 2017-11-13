@@ -10,5 +10,6 @@ class Song
     title = name.chomp(".mp3").split(" - ")
     song = Song.new(title[1])
     song.artist = Artist.find_or_create_by_name(title[0])
+    song
   end
 end
